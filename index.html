@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script data-ad-client="ca-pub-2264914795953411" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contador de palabras</title>
+</head>
+<body>
+	<div id="spam1"></div>
+	<div>
+		<div id="spam1"></div>
+		<div id="contenido">
+			<textarea id="input" onkeyup='onchangeFunction(this)'></textarea>
+			<p id="total">Cantidad de palabras: 0</p>
+		</div>
+		<div id="spam1"></div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function onchangeFunction(value){
+		let p  = document.getElementById('total')
+		let cp = 'Cantidad de palabras: '
+		if (value.value){
+			p.innerHTML = cp +value.value.split(' ').length
+		}else{
+			p.innerHTML = cp+"0"
+		}
+	}
+</script>
+</html>
