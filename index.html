@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" >
 <head>
-	<script data-ad-client="ca-pub-2264914795953411" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!--script data-ad-client="ca-pub-2264914795953411" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Contador de palabras en español, contador online">	
 	<title>Contador de palabras</title>
+	<link href="css.css" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 <body>
-	<div id="spam1"></div>
-	<div>
-		<div id="spam1"></div>
-		<div id="contenido">
-			<textarea id="input" onkeyup='onchangeFunction(this)'></textarea>
-			<p id="total">Cantidad de palabras: 0</p>
-		</div>
-		<div id="spam1"></div>
-	</div>
 
+
+	<div class="general">
+		<div class="spamprincipal">
+			<p>ads</p>
+		</div>
+		<h1>Contador de palabras</h1>
+		<p></p>
+		<div class="general">
+			<div class="spamleft">
+				<p>ads</p>
+			</div>
+			<div class="contenido">
+				<p id="total">Cantidad de palabras: 0</p>
+				<textarea class="textareainput" id="input" onkeyup='onchangeFunction(this)' placeholder="Agrega aca el texto que quieres contar">En general, las diferentes posturas reconocen que la pobreza se identifica con nociones tales como la de privación, de ausencia, de carencia, y constituye un concepto descriptivo más que explicativo</textarea>
+
+			</div>
+			<div class="spamright">
+				<p>ads</p>
+			</div>
+		</div>		
+	</div>
 </body>
 <script type="text/javascript">
 	function onchangeFunction(value){
 		let p  = document.getElementById('total')
 		let cp = 'Cantidad de palabras: '
 		if (value.value){
-			p.innerHTML = cp +value.value.split(' ').length
+			p.innerHTML = cp +value.value.trim().split(' ').length
 		}else{
 			p.innerHTML = cp+"0"
 		}
