@@ -21,16 +21,17 @@ script(type='text/javascript').
 
   let diff = fecha2 - fecha1;
 
+  let onesegundo = 1000
 
-  segundo.innerHTML = 'Diferencia en segundos: '+diff/1000
-  minuto.innerHTML = 'Diferencia en minutos: '+diff/60000
-  hora.innerHTML = 'Diferencia en horas: '+diff/3600000
-  dia.innerHTML = 'Diferencia en días: '+diff/86400000
-  semana.innerHTML = 'Diferencia en semanas: '+diff/(86400000*4)
-  mes.innerHTML = 'Diferencia en meses: '+diff/(86400000*30.4167)
-  ano.innerHTML = 'Diferencia en años: '+diff/(86400000*30.4167*12)
-  decada.innerHTML = 'Diferencia en decadas: '+diff/(86400000*30.4167*12*10)
-  siglo.innerHTML = 'Diferencia en siglos: '+diff/(86400000*30.4167*12*100)
+  segundo.innerHTML = 'Diferencia en segundos: '+diff/onesegundo
+  minuto.innerHTML = 'Diferencia en minutos: '+diff/(60*onesegundo)
+  hora.innerHTML = 'Diferencia en horas: '+diff/(60*60*onesegundo)
+  dia.innerHTML = 'Diferencia en días: '+diff/(24*60*60*onesegundo)
+  semana.innerHTML = 'Diferencia en semanas: '+diff/(4*24*60*60*onesegundo)
+  mes.innerHTML = 'Diferencia en meses: '+diff/(24*60*60*onesegundo*30.4167)
+  ano.innerHTML = 'Diferencia en años: '+diff/(24*60*60*onesegundo*30.4167*12)
+  decada.innerHTML = 'Diferencia en decadas: '+diff/(24*60*60*onesegundo*30.4167*12*10)
+  siglo.innerHTML = 'Diferencia en siglos: '+diff/(24*60*60*onesegundo*30.4167*12*100)
 
  }
 
