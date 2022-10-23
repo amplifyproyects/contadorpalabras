@@ -1,0 +1,10 @@
+script(type='text/javascript').
+ function onchangeFunction(value){
+  let p  = document.getElementById('total')
+  let cp = 'Cantidad de palabras: '
+  if (value.value){
+   p.innerHTML = cp +value.value.trim().split(' ').length
+  }else{
+   p.innerHTML = cp+"0"
+  }
+ }

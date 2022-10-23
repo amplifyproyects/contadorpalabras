@@ -1,0 +1,47 @@
+ --color-white: #fff;
+
+.general{
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    flex-wrap: wrap;
+    min-height: 330px;
+
+}
+.spamprincipal{
+    /*background-color: red;*/
+    width: 100%;
+}
+.spamright, .spamleft{
+    width: 23%;
+    margin: 1%;
+}
+.spamright{
+    /*background-color: blue;*/
+}
+.spamleft{
+    /*background-color: orange;*/
+}
+.contenido{
+    /*background-color: green;*/
+    width: 48%;
+    height: 100%;
+    margin: 1%;
+    display: grid;
+}
+.contenido > #total{
+    max-height: 30px;
+}
+.textareainput{
+    width: 90%;
+    margin-left: 5%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1{
+    text-align: center;
+}
+
