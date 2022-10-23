@@ -1,0 +1,37 @@
+
+
+script(type='text/javascript').
+ document.getElementById("fecha1").defaultValue = "2021-02-09"; 
+ document.getElementById("fecha2").defaultValue = "2022-02-09"; 
+
+ function diferenciaFechas(){
+
+  let segundo  = document.getElementById('segundo')
+  let minuto  = document.getElementById('minuto')
+  let dia  = document.getElementById('dia')
+  let hora  = document.getElementById('hora')
+  let semana = document.getElementById('semana')
+  let mes  = document.getElementById('mes')
+  let ano  = document.getElementById('ano')
+  let decada  = document.getElementById('decada')
+  let siglo  = document.getElementById('siglo')
+
+  let fecha1 = new Date(document.getElementById('fecha1').value).getTime(); 
+  let fecha2 = new Date(document.getElementById('fecha2').value).getTime();
+
+  let diff = fecha2 - fecha1;
+
+
+  segundo.innerHTML = 'Diferencia en segundos: '+diff/1000
+  minuto.innerHTML = 'Diferencia en minutos: '+diff/60000
+  hora.innerHTML = 'Diferencia en horas: '+diff/3600000
+  dia.innerHTML = 'Diferencia en días: '+diff/86400000
+  semana.innerHTML = 'Diferencia en semanas: '+diff/(86400000*4)
+  mes.innerHTML = 'Diferencia en meses: '+diff/(86400000*30.4167)
+  ano.innerHTML = 'Diferencia en años: '+diff/(86400000*30.4167*12)
+  decada.innerHTML = 'Diferencia en decadas: '+diff/(86400000*30.4167*12*10)
+  siglo.innerHTML = 'Diferencia en siglos: '+diff/(86400000*30.4167*12*100)
+
+ }
+
+ diferenciaFechas()
