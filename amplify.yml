@@ -13,7 +13,7 @@ frontend:
         - npm run test1
     build:
       commands:
-        - npm run test1
+        - npm run start
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
