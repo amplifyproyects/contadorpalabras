@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "echo \"OK\"",
     "local": "nodemon index.js",
     "lint": "npx standard --fix",
     "start":"node index.js"

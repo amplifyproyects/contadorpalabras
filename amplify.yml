@@ -5,11 +5,14 @@ backend:
     build:
       commands:
         - '# Execute Amplify CLI with the helper script'
-        - amplifyPush --simple
+        - npm run test1
 frontend:
   phases:
     preBuild:
+      commands:
+        - npm run test1
     build:
+      commands: []
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
