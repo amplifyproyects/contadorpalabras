@@ -10,7 +10,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm run test1
     build:
       commands: []
   artifacts:
