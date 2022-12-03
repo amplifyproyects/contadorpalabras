@@ -8,7 +8,7 @@
     "local": "nodemon index.js",
     "lint": "npx standard --fix"
   },
-  "author": "",
+  "author": "cesar Garzon",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",

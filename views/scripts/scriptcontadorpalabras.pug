@@ -1,10 +1,16 @@
 script(type='text/javascript').
  function onchangeFunction(value){
   let p  = document.getElementById('total')
+  let tc = document.getElementById('totalcaracteres');
+
   let cp = 'Cantidad de palabras: '
+  let cc = 'Cantidad de caracteres: '
+
   if (value.value){
    p.innerHTML = cp +value.value.trim().split(' ').length
+   tc.innerHTML = cc +value.value.length
   }else{
    p.innerHTML = cp+"0"
+   tc.innerHTML = cc +"0"
   }
  }
